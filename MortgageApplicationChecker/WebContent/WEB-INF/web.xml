@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>FluffyCRMWeb</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- contains 2 things: tell which servlet & Map servlets to actions -->
+	<servlet>
+		<servlet-name>clientManagementServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.ClientManagementServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>clientManagementServlet</servlet-name>
+		<url-pattern>/protected/clientManagement</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>clientRegistrationFormServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.ClientRegistrationFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>clientRegistrationFormServlet</servlet-name>
+		<url-pattern>/protected/clientRegistrationForm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>clientRegistrationServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.ClientRegistrationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>clientRegistrationServlet</servlet-name>
+		<url-pattern>/protected/clientRegistration</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>clientCategoryManagementServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.ClientCategoryManagementServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>clientCategoryManagementServlet</servlet-name>
+		<url-pattern>/protected/clientCategoryManagement</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>clientCategoryRegistrationFormServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.ClientCategoryRegistrationFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>clientCategoryRegistrationFormServlet</servlet-name>
+		<url-pattern>/protected/clientCategoryRegistrationForm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>clientCategoryRegistrationServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.ClientCategoryRegistrationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>clientCategoryRegistrationServlet</servlet-name>
+		<url-pattern>/protected/clientCategoryRegistration</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>clientReportServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.ClientReportServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>clientReportServlet</servlet-name>
+		<url-pattern>/protected/clientReport</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>allClientsInCategoryServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.AllClientsInCategoryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>allClientsInCategoryServlet</servlet-name>
+		<url-pattern>/protected/allClientsInCategory</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>removeFromCategoryServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.RemoveFromCategoryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>removeFromCategoryServlet</servlet-name>
+		<url-pattern>/protected/removeFromCategory</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addToCategoryServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.AddToCategoryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addToCategoryServlet</servlet-name>
+		<url-pattern>/protected/addToCategory</url-pattern>
+	</servlet-mapping>
+	
+	<!--     -->
+	
+	<servlet>
+		<servlet-name>loginConfirmationServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.LoginConfirmationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginConfirmationServlet</servlet-name>
+		<url-pattern>/protected/loginConfirmation</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>clientProfileServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.ClientProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>clientProfileServlet</servlet-name>
+		<url-pattern>/protected/clientProfile</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>logoutServlet</servlet-name>
+		<servlet-class>com.fdmgroup.fluffycrmsystem.servlets.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Define our security method -->
+	<login-config>
+	<auth-method>FORM</auth-method>
+	<form-login-config>
+		<form-login-page>/WEB-INF/login.jsp</form-login-page>
+		<form-error-page>/WEB-INF/login.jsp</form-error-page>
+	</form-login-config>
+	</login-config>
+	
+	<!-- Define valid roles -->
+	<security-role>
+		<role-name>basic_user</role-name>
+	</security-role>
+	<security-role>
+		<role-name>admin_user</role-name>
+	</security-role>
+	
+	<!-- Define which pages is protected -->
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>protectedPages</web-resource-name>
+			<url-pattern>/protected/*</url-pattern>
+			<http-method>POST</http-method>
+			<http-method>GET</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>basic_user</role-name>
+			<role-name>admin_user</role-name>
+		</auth-constraint>
+	</security-constraint>
+	
+</web-app>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-Web/jsp-api-2.0.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-Web/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Dependencies-Web/servlet-api-2.5.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/mockito-all-1.9.5.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/ojdbc14-10.2.0.4.0.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/asm-1.5.3.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/asm-attrs-1.5.3.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/c3p0-0.9.1.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/cglib-2.1_3.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/ehcache-1.2.3.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/freemarker-2.3.4.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/hibernate-3.2.2.ga.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/hibernate-annotations-3.2.1.ga.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/hibernate-entitymanager-3.2.1.ga.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/hibernate-tools-3.2.0.beta9a.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/javassist-3.3.ga.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/jboss-archive-browsing-5.0.0alpha-200607201-119.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/jtidy-r8-20060801.jar"/>
+	<classpathentry kind="lib" path="//FILBTN002/trainees/Duc.Nguyen/JavaWorkSpace/Depenencies-JPA/JPADependencies/persistence-api-1.0.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
